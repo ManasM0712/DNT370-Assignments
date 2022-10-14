@@ -1,0 +1,27 @@
+﻿@model DNT370_Assignments.Areas.Admin.Models.AdminModel
+
+@{
+    ViewData["Title"] = "Admin-Profile";
+    Layout = "~/Areas/Admin/Views/Shared/_AdminLayout.cshtml";
+}
+
+<div>
+    <h3>Welcome @TempData.Peek("UserName")</h3>
+    <h4>This is the Admin Profile</h4>
+
+    <div class="row">
+        <div class="col-md-4">
+            <form asp-action="Login">
+                <div asp-validation-summary="ModelOnly" class="text-danger"></div>
+                <div class="form-group">
+                    <label asp-for="FirstName" class="control-label"></label>                    
+                </div>
+                <div class="form-group">
+                    <label asp-for="LastName" class="control-label"></label>                   
+                </div>
+                <br />               
+            </form>
+        </div>
+    </div>
+
+</div>

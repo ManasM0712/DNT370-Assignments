@@ -1,0 +1,9 @@
+﻿@{
+    ViewData["Title"] = "User Dashboard";
+    Layout = "~/Areas/User/Views/Shared/_UserLayout.cshtml";
+}
+
+<div>    
+    <h3>Welcome @TempData.Peek("UserName")</h3>
+    <h4>This is the User Dashboard</h4>
+</div>
